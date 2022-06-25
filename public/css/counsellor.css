@@ -1,0 +1,10 @@
+.content {
+    border: 1px solid #666;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.counsellor-image {
+    border-radius: 20px;
+    width: 100%;
+}
