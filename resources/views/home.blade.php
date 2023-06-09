@@ -9,6 +9,7 @@
     </div>
     @endif
     <h1>CI/CD Pipeline Test</h1>
+    <h2>Hello Test</h2>
     <div class="container mb-4">
         <div class="row">
             <div class="col-6">
