@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <h1>Jenkins CI/CD Trigger Test</h1>
+    
     <div class="container border rounded py-4 mb-4">
         <h3 class="text-white text-center mb-4">What is Counselling?</h3>
         <div class="row">
