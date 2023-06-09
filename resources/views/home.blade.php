@@ -8,6 +8,7 @@
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     @endif
+    <h1>CI/CD Pipeline Test</h1>
     <div class="container mb-4">
         <div class="row">
             <div class="col-6">
