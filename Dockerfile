@@ -14,9 +14,9 @@ COPY . .
 
 RUN cp .env.example .env
 
-RUN php artisan key:generate
-
 RUN composer install --optimize-autoloader --no-dev
+
+RUN php artisan key:generate
 
 RUN chown -R www-data:www-data storage bootstrap/cache
 RUN chmod -R 775 storage bootstrap/cache
