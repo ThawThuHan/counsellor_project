@@ -15,7 +15,7 @@ pipeline {
         }
         stage('build Dockerfile') {
             steps {
-                sshagent(['counsellor-server']) {
+                sshagent(['remote_ssh']) {
                     sh '''
                         ssh -o StrictHostKeyChecking=no msis@192.168.59.69 "rm -rf counsellor_project"
                         scp -r $(pwd) msis@192.168.59.69:~/.
