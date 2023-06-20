@@ -19,7 +19,7 @@ pipeline {
                     sh '''
                         ssh -o StrictHostKeyChecking=no msis@192.168.59.69 "rm -rf counsellor_project"
                         scp -r $(pwd) msis@192.168.59.69:~/.
-                        ssh -o StrictHostKeyChecking=no msis@192.168.59.69 "cd counsellor_project && docker build -t counsellor ."
+                        ssh -o StrictHostKeyChecking=no msis@192.168.59.69 "cd counsellor_project && docker build -t counsellor_img ."
                         ssh -o StrictHostKeyChecking=no msis@192.168.59.69 "docker inspect counsellor >/dev/null 2&>1 && docker rm -f counsellor"
                         ssh -o StrictHostKeyChecking=no msis@192.168.59.69 "docker run -d --name counsellor -p 30005:80 counsellor"
                     '''
